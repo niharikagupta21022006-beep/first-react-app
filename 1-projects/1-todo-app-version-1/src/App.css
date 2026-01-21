@@ -1,4 +1,4 @@
-h1 {
+.todo-container h1 {
     font-weight: 700;
     font-size: 45px;
     margin: 10px;
@@ -14,7 +14,12 @@ input {
     text-align: left;
 }
 
+.Kg-button {
+    min-width: 80px;
+
+}
+
 .Kg-row {
-    margin: 5px;
+    margin: 10px 5px;
 }
 
