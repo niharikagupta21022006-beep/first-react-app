@@ -1,8 +1,8 @@
 import AppName from "./components/AppName";
 
 import AddTodo from "./components/AddTodo";
-import TodoItem from "./components/TodoItem";
 import './App.css';
+import TodoItems from "./components/TodoItems";
 
 
 function App() {
@@ -17,16 +17,18 @@ function App() {
       name:"Go to College",
       dueDate:"19/1/26",
     },
+
+    {
+      name:"Like this video",
+      dueDate:"Right Now",
+    },
   ];
   return (
     <center className="todo-container">
       <AppName/>
       <AddTodo/>
-    <div className="items-container">
-      <TodoItem todoDate="19/1/26" todoName="Buy Milk"></TodoItem>
-      <TodoItem todoDate="19/1/26" todoName="Go to College"></TodoItem>
-
-    </div>    
+      <TodoItems todoItems={todoItems}></TodoItems>
+     
         
       </center>
   )
